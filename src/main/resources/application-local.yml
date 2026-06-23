@@ -1,0 +1,11 @@
+# Perfil LOCAL — sobreescribe application.yml para desarrollo en máquina personal.
+# NO incluir en imagen Docker ni en ECS Task Definition.
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  rabbitmq:
+    username: guest
+    password: guest
+    virtual-host: /
